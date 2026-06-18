@@ -2,11 +2,16 @@
 import time
 import random
 import sys
+import os
 from atproto import Client
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # ===== CONFIG =====
-HANDLE = "mrchrisdavis.bsky.social"  # Change this
-PASSWORD = "1Raven01!"      # Change this
+HANDLE = os.getenv("BLUESKY_HANDLE")
+PASSWORD = os.getenv("BLUESKY_PASSWORD")
 # =================
 
 POSTS = [
