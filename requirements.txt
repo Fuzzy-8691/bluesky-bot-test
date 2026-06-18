@@ -2,3 +2,4 @@ atproto
 python-dotenv
 groq
 requests
+discord.py
